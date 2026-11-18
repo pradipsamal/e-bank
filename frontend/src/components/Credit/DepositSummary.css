@@ -1,0 +1,112 @@
+/* ==========================================
+   DEPOSIT SUMMARY
+========================================== */
+
+.deposit-summary {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.deposit-summary-card {
+    min-height: 92px;
+
+    padding: 17px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    border: 1px solid #e4ebef;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 5px 18px rgba(31, 61, 82, 0.035);
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.deposit-summary-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eaf7f4;
+
+    font-size: 19px;
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.deposit-summary-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.deposit-summary-content span {
+    color: #94a4ae;
+
+    font-size: 9px;
+}
+
+
+.deposit-summary-content strong {
+    color: #204b6c;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+.deposit-summary-content small {
+    color: #9cabb3;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .deposit-summary {
+        grid-template-columns: 1fr;
+    }
+
+}

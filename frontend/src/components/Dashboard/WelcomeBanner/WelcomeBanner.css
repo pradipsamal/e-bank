@@ -1,0 +1,99 @@
+.welcome-banner {
+    position: relative;
+    min-height: 150px;
+    padding: 30px 34px;
+    overflow: hidden;
+    border-radius: 16px;
+    background:
+        radial-gradient(circle at 90% 20%,
+            rgba(255, 255, 255, 0.12),
+            transparent 30%),
+        linear-gradient(120deg,
+            #123f65,
+            #176477);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:
+        0 12px 30px rgba(23, 72, 120, 0.12);
+}
+
+.welcome-banner::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    right: 100px;
+    top: -140px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-label {
+    display: block;
+    margin-bottom: 9px;
+    color: #a7d9d1;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.welcome-content h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.welcome-content p {
+    margin-top: 9px;
+    color: #b9ccd8;
+    font-size: 12px;
+}
+
+.welcome-date {
+    position: relative;
+    z-index: 2;
+    min-width: 125px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.welcome-date span {
+    display: block;
+    margin-bottom: 5px;
+    color: #a7c0ce;
+    font-size: 9px;
+}
+
+.welcome-date strong {
+    color: #fff;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .welcome-banner {
+        padding: 25px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .welcome-content h1 {
+        font-size: 22px;
+    }
+
+    .welcome-date {
+        width: 100%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,314 @@
+/* ==========================================
+   ACCOUNT FORM
+========================================== */
+
+.account-form {
+    width: 100%;
+}
+
+
+/* ==========================================
+   FORM SECTION
+========================================== */
+
+.form-section {
+    margin-bottom: 30px;
+
+    padding-bottom: 27px;
+
+    border-bottom: 1px solid #edf1f3;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.form-section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 21px;
+}
+
+.form-section-number {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #e8f7f4;
+
+    color: #208d79;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.form-section-heading h2 {
+    margin: 0;
+
+    color: #254b68;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.form-section-heading p {
+    margin-top: 3px;
+
+    color: #98a7b0;
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 19px 17px;
+}
+
+
+/* ==========================================
+   TEXTAREA
+========================================== */
+
+.form-input-group textarea {
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 13px 14px;
+
+    resize: vertical;
+
+    border: 1px solid #dce5ea;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #304c61;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-input-group textarea::placeholder {
+    color: #a5b2bb;
+}
+
+.form-input-group textarea:focus {
+    border-color: #2a9d8b;
+
+    box-shadow:
+        0 0 0 3px rgba(42, 157, 139, 0.09);
+}
+
+
+/* ==========================================
+   GENDER
+========================================== */
+
+.gender-options {
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #506474;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.gender-option input {
+    width: 15px;
+    height: 15px;
+
+    margin: 0;
+
+    accent-color: #218f7c;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   SECURITY NOTE
+========================================== */
+
+.form-security-note {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    padding: 13px 15px;
+
+    border: 1px solid #dcefeb;
+
+    border-radius: 9px;
+
+    background: #f2fbf9;
+}
+
+.security-icon {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #e1f5f0;
+
+    font-size: 15px;
+}
+
+.form-security-note strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #287d6f;
+
+    font-size: 10px;
+}
+
+.form-security-note p {
+    color: #7f9995;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   SUBMIT
+========================================== */
+
+.create-account-submit {
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2167d8;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(33, 103, 216, 0.18);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.create-account-submit span {
+    font-size: 16px;
+
+    transition: transform 0.2s ease;
+}
+
+.create-account-submit:hover {
+    background: #1859c3;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 18px rgba(33, 103, 216, 0.23);
+}
+
+.create-account-submit:hover span {
+    transform: translateX(3px);
+}
+
+.create-account-submit:active {
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+    }
+
+    .gender-options {
+        gap: 18px;
+    }
+
+    .form-section {
+        margin-bottom: 25px;
+
+        padding-bottom: 23px;
+    }
+
+    .form-security-note {
+        align-items: flex-start;
+    }
+
+}

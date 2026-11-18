@@ -1,0 +1,282 @@
+.transaction-card {
+    width: 100%;
+    min-height: 125px;
+
+    padding: 23px 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr 1.5fr 0.7fr 1fr 1fr auto;
+
+    align-items: center;
+
+    gap: 22px;
+
+    border: 1px solid #e1e9ed;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow: 0 4px 18px rgba(28, 61, 80, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.transaction-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #cbdedb;
+
+    box-shadow: 0 10px 28px rgba(28, 61, 80, 0.08);
+}
+
+/* MAIN */
+
+.transaction-main {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.transaction-type-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.credit-icon {
+    background: #edf8f5;
+    color: #218c78;
+}
+
+.debit-icon {
+    background: #fff3f2;
+    color: #c96159;
+}
+
+/* COMMON LABELS */
+
+.transaction-id span,
+.transaction-account span,
+.transaction-type span,
+.transaction-amount span,
+.transaction-date span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #8e9ea7;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+}
+
+/* TRANSACTION ID */
+
+.transaction-id strong {
+    color: #244e6b;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* ACCOUNT */
+
+.transaction-account {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+.transaction-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #edf3f6;
+
+    color: #365e77;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.transaction-account strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #466477;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.transaction-account small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #9aa8b0;
+
+    font-size: 10px;
+}
+
+/* TYPE */
+
+.transaction-type strong {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* AMOUNT */
+
+.transaction-amount strong {
+    font-size: 16px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+/* DATE */
+
+.transaction-date strong {
+    display: block;
+
+    color: #526d7d;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.transaction-date small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #9aa8b0;
+
+    font-size: 10px;
+}
+
+/* COLORS */
+
+.credit-text {
+    color: #218c78;
+}
+
+.debit-text {
+    color: #c96159;
+}
+
+/* STATUS */
+
+.transaction-status {
+    height: 29px;
+
+    padding: 0 10px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: 1px solid #dcefe9;
+    border-radius: 6px;
+
+    background: #f0f9f6;
+
+    color: #278b78;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.transaction-status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #2c9a82;
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .transaction-card {
+        grid-template-columns:
+            1.3fr 1.5fr 1fr 1fr;
+
+        gap: 18px;
+    }
+
+    .transaction-status {
+        justify-self: start;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .transaction-card {
+        min-height: auto;
+
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 17px;
+    }
+
+    .transaction-main,
+    .transaction-account,
+    .transaction-type,
+    .transaction-amount,
+    .transaction-date {
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid #edf1f3;
+    }
+
+    .transaction-status {
+        width: fit-content;
+    }
+}

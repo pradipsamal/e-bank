@@ -1,0 +1,231 @@
+.balance-overview {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 18px;
+
+    margin-top: 22px;
+}
+
+.balance-main-card {
+    position: relative;
+
+    min-height: 220px;
+
+    padding: 27px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: linear-gradient(135deg,
+            #174878,
+            #0b7180);
+
+    color: white;
+
+    box-shadow:
+        0 12px 30px rgba(23, 72, 120, 0.13);
+}
+
+.balance-main-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    right: -90px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.balance-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.balance-card-header span {
+    color: #b5cbd6;
+
+    font-size: 11px;
+}
+
+.balance-card-header button {
+    border: none;
+    background: transparent;
+
+    color: #c3d5de;
+
+    font-size: 18px;
+}
+
+.balance-main-card h2 {
+    margin-top: 20px;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+}
+
+.balance-growth {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 8px;
+}
+
+.balance-growth span {
+    padding: 4px 7px;
+
+    border-radius: 5px;
+
+    background: rgba(50, 200, 165, 0.14);
+
+    color: #71d7c0;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.balance-growth p {
+    color: #9bb4c1;
+
+    font-size: 9px;
+}
+
+.balance-account {
+    position: absolute;
+
+    left: 27px;
+    right: 27px;
+    bottom: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.balance-account span {
+    color: #a8bfca;
+
+    font-size: 9px;
+}
+
+.balance-account strong {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* Small Cards */
+
+.balance-small-card {
+    min-height: 220px;
+
+    padding: 27px;
+
+    border: 1px solid #e3eaee;
+    border-radius: 15px;
+
+    background: #fff;
+
+    box-shadow:
+        0 6px 20px rgba(40, 63, 80, 0.04);
+}
+
+.balance-small-card>span {
+    display: block;
+
+    color: #81929f;
+
+    font-size: 11px;
+}
+
+.balance-small-card strong {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #193c57;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.balance-small-card p {
+    margin-top: 9px;
+
+    color: #8b9aa4;
+
+    font-size: 10px;
+}
+
+.balance-small-card p b {
+    color: var(--green);
+}
+
+.balance-progress {
+    height: 5px;
+
+    margin-top: 35px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e9f4f1;
+}
+
+.balance-progress span {
+    display: block;
+
+    width: 72%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--green);
+}
+
+.balance-progress.expense {
+    background: #f5eaea;
+}
+
+.balance-progress.expense span {
+    width: 45%;
+
+    background: #df7777;
+}
+
+@media (max-width: 950px) {
+    .balance-overview {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .balance-main-card {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .balance-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .balance-main-card {
+        grid-column: auto;
+    }
+}

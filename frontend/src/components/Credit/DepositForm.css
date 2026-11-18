@@ -1,0 +1,688 @@
+/* ==========================================
+   DEPOSIT FORM
+========================================== */
+
+.deposit-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+
+/* ==========================================
+   FIELD
+========================================== */
+
+.deposit-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.deposit-field label {
+    color: #3d5363;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.deposit-field label i {
+    margin-left: 3px;
+
+    color: #d85d53;
+
+    font-style: normal;
+}
+
+
+/* ==========================================
+   INPUT / SELECT / TEXTAREA
+========================================== */
+
+.deposit-field input,
+.deposit-field select,
+.deposit-field textarea {
+    width: 100%;
+
+    border: 1px solid #dce5ea;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #304c61;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.deposit-field input,
+.deposit-field select {
+    height: 45px;
+
+    padding: 0 13px;
+}
+
+
+.deposit-field textarea {
+    min-height: 82px;
+
+    padding: 12px 13px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+.deposit-field input::placeholder,
+.deposit-field textarea::placeholder {
+    color: #a5b2bb;
+}
+
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+.deposit-field input:focus,
+.deposit-field select:focus,
+.deposit-field textarea:focus {
+    border-color: #299a88;
+
+    box-shadow:
+        0 0 0 3px rgba(41, 154, 136, 0.08);
+}
+
+
+/* ==========================================
+   HELP
+========================================== */
+
+.field-help {
+    color: #8da09f;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   ACCOUNT SEARCH
+========================================== */
+
+.account-search-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.account-search-wrapper input {
+    padding-right: 50px;
+}
+
+
+.account-search-button {
+    position: absolute;
+
+    right: 6px;
+    top: 50%;
+
+    width: 34px;
+    height: 34px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #eaf7f4;
+
+    color: #218d79;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.account-search-button:hover {
+    background: #dcefeb;
+
+    transform: translateY(-50%) scale(1.03);
+}
+
+
+/* ==========================================
+   SEARCH HINT
+========================================== */
+
+.customer-search-hint {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: -8px;
+
+    padding: 11px 13px;
+
+    border: 1px solid #e4ebef;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+
+.hint-icon {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #edf4f7;
+
+    font-size: 13px;
+}
+
+
+.customer-search-hint strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #486477;
+
+    font-size: 9px;
+}
+
+
+.customer-search-hint p {
+    color: #98a7af;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   SELECTED CUSTOMER
+========================================== */
+
+.selected-customer {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: -7px;
+
+    padding: 14px;
+
+    border: 1px solid #dcefeb;
+
+    border-radius: 10px;
+
+    background: #f7fcfb;
+
+    animation: customerAppear 0.2s ease;
+}
+
+
+@keyframes customerAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==========================================
+   CUSTOMER AVATAR
+========================================== */
+
+.customer-avatar {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #174a79;
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   CUSTOMER DETAILS
+========================================== */
+
+.customer-details {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.customer-details strong {
+    color: #294d68;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+.customer-details span {
+    color: #718896;
+
+    font-size: 8px;
+}
+
+
+.customer-details small {
+    color: #99a8b1;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   BALANCE
+========================================== */
+
+.customer-balance {
+    padding-left: 18px;
+
+    border-left: 1px solid #dce8e7;
+
+    text-align: right;
+}
+
+
+.customer-balance span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #91a19f;
+
+    font-size: 8px;
+}
+
+
+.customer-balance strong {
+    color: #218d79;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   DEPOSIT AMOUNT
+========================================== */
+
+.deposit-amount {
+    position: relative;
+}
+
+
+.deposit-amount>span {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #218d79;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    pointer-events: none;
+}
+
+
+.deposit-amount input {
+    padding-left: 31px;
+}
+
+
+/* ==========================================
+   AMOUNT LIMITS
+========================================== */
+
+.amount-limits {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 1px;
+}
+
+
+.amount-limits span {
+    color: #98a8b1;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.deposit-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.deposit-message {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 13px;
+
+    border-radius: 9px;
+}
+
+
+.deposit-message .message-icon {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+.deposit-message strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 9px;
+}
+
+
+.deposit-message p {
+    font-size: 8px;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.deposit-error {
+    border: 1px solid #f0d8d5;
+    background: #fff6f5;
+}
+
+
+.deposit-error .message-icon {
+    background: #e46a60;
+}
+
+
+.deposit-error strong {
+    color: #a9554d;
+}
+
+
+.deposit-error p {
+    color: #b8756e;
+}
+
+
+/* ==========================================
+   SUCCESS
+========================================== */
+
+.deposit-success {
+    border: 1px solid #d6eee8;
+    background: #f1fbf8;
+}
+
+
+.deposit-success .message-icon {
+    background: #299a88;
+}
+
+
+.deposit-success strong {
+    color: #277c6f;
+}
+
+
+.deposit-success p {
+    color: #6f9891;
+}
+
+
+/* ==========================================
+   SECURITY
+========================================== */
+
+.deposit-security {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 13px 14px;
+    border: 1px solid #dcefeb;
+    border-radius: 9px;
+    background: #f1fbf8;
+}
+
+
+.deposit-security-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #e2f5f0;
+    font-size: 15px;
+}
+
+
+.deposit-security strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #287f71;
+    font-size: 10px;
+}
+
+
+.deposit-security p {
+    color: #829d97;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   SUBMIT
+========================================== */
+
+.deposit-submit {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #174a79;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow:
+        0 6px 15px rgba(23, 74, 121, 0.18);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.deposit-submit strong {
+    font-size: 16px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.deposit-submit:hover {
+    background: #123f68;
+    transform: translateY(-1px);
+    box-shadow:
+        0 8px 19px rgba(23, 74, 121, 0.22);
+}
+
+
+.deposit-submit:hover strong {
+    transform: translateX(3px);
+}
+
+
+.deposit-submit:active {
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.deposit-submit-note {
+    margin-top: -9px;
+    text-align: center;
+    color: #9aa8b0;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .deposit-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .amount-limits {
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+
+    .selected-customer {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .customer-balance {
+        width: 100%;
+
+        padding-left: 56px;
+
+        border-left: none;
+
+        text-align: left;
+    }
+
+
+    .deposit-security {
+        align-items: flex-start;
+    }
+
+}

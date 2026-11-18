@@ -1,0 +1,390 @@
+/* ==========================================
+   DEBIT / WITHDRAWAL PAGE
+========================================== */
+
+.debit-page {
+    min-height: calc(100vh - 88px);
+
+    padding: 40px 4% 60px;
+
+    background: #f5f8fc;
+}
+
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.debit-page-header {
+    max-width: 1400px;
+
+    margin: 0 auto 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.debit-page-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #209681;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+}
+
+.debit-page-header h1 {
+    margin: 0;
+
+    color: #173f63;
+
+    font-size: 31px;
+    font-weight: 800;
+
+    letter-spacing: -0.6px;
+}
+
+.debit-page-header p {
+    margin-top: 8px;
+
+    color: #8499a7;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   SECURITY BADGE
+========================================== */
+
+.debit-secure-badge {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 16px;
+
+    border: 1px solid #d8eee9;
+
+    border-radius: 10px;
+
+    background: #f1fbf8;
+}
+
+.debit-secure-badge>span {
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #e1f5f0;
+
+    font-size: 16px;
+}
+
+.debit-secure-badge strong {
+    display: block;
+
+    color: #287f71;
+
+    font-size: 10px;
+}
+
+.debit-secure-badge small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8ca69f;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.debit-main-content {
+    max-width: 1400px;
+
+    margin: 25px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.7fr) minmax(280px, 0.8fr);
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.withdrawal-form-card {
+    padding: 29px 31px;
+
+    border: 1px solid #e3eaee;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 25px rgba(31, 61, 82, 0.045);
+}
+
+
+/* ==========================================
+   FORM HEADER
+========================================== */
+
+.withdrawal-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 22px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #edf1f3;
+}
+
+.withdrawal-card-header>div:first-child>span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #209681;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.withdrawal-card-header h2 {
+    color: #214b6a;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.withdrawal-card-header p {
+    margin-top: 5px;
+
+    color: #96a5ae;
+
+    font-size: 9px;
+}
+
+.withdrawal-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #e8f7f4;
+
+    color: #218d79;
+
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   RIGHT INFO CARD
+========================================== */
+
+.withdrawal-info {
+    padding: 25px;
+
+    border: 1px solid #e3eaee;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 25px rgba(31, 61, 82, 0.04);
+}
+
+.withdrawal-info-heading {
+    margin-bottom: 18px;
+}
+
+.withdrawal-info-heading span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #209681;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.withdrawal-info-heading h2 {
+    color: #173f63;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   INFO ITEM
+========================================== */
+
+.withdrawal-info-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #edf1f3;
+}
+
+.withdrawal-info-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eaf7f4;
+
+    font-size: 15px;
+}
+
+.withdrawal-info-item h3 {
+    margin-bottom: 5px;
+
+    color: #294d68;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.withdrawal-info-item p {
+    color: #91a1ab;
+
+    font-size: 9px;
+
+    line-height: 1.55;
+}
+
+
+/* ==========================================
+   HELP
+========================================== */
+
+.withdrawal-help {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 19px;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    background: #f5f8fc;
+}
+
+.withdrawal-help>span {
+    font-size: 15px;
+}
+
+.withdrawal-help strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #31536b;
+
+    font-size: 9px;
+}
+
+.withdrawal-help p {
+    color: #8d9da7;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .debit-main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .withdrawal-info {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .debit-page {
+        padding: 28px 15px 45px;
+    }
+
+    .debit-page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .debit-page-header h1 {
+        font-size: 27px;
+    }
+
+    .debit-secure-badge {
+        width: 100%;
+    }
+
+    .withdrawal-form-card {
+        padding: 23px 19px;
+    }
+}

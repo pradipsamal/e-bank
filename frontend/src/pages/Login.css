@@ -1,0 +1,17 @@
+    .login-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(420px, 0.95fr) minmax(480px, 1.05fr);
+
+    background: #f8fafc;
+    }
+
+    /* ========================================
+    Responsive
+    ======================================== */
+
+    @media (max-width: 950px) {
+    .login-page {
+        grid-template-columns: 1fr;
+    }
+    }

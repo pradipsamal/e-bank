@@ -1,0 +1,100 @@
+/* ==========================================
+   CREATE ACCOUNT PAGE
+========================================== */
+
+.create-account-page {
+    min-height: calc(100vh - 88px);
+
+    padding: 42px 20px 60px;
+
+    background: #f5f8fc;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.create-account-container {
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 34px 38px 38px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5ebef;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 30px rgba(28, 58, 80, 0.07);
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.create-account-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.create-account-label {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #209681;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+.create-account-header h1 {
+    margin: 0;
+
+    color: #173f63;
+
+    font-size: 29px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+.create-account-header p {
+    margin-top: 8px;
+
+    color: #8a9da9;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .create-account-page {
+        padding: 25px 14px 40px;
+    }
+
+    .create-account-container {
+        padding: 27px 20px 30px;
+
+        border-radius: 13px;
+    }
+
+    .create-account-header h1 {
+        font-size: 25px;
+    }
+
+}

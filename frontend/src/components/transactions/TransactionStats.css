@@ -1,0 +1,66 @@
+.transaction-stats {
+    max-width: 1400px;
+
+    margin: 0 auto 28px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.transaction-stat-card {
+    padding: 22px;
+
+    border: 1px solid #e1e9ed;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow: 0 4px 18px rgba(28, 61, 80, 0.035);
+}
+
+.stat-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #8e9ea7;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+.transaction-stat-card strong {
+    display: block;
+
+    color: #244e6b;
+
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.transaction-stat-card p {
+    margin: 7px 0 0;
+
+    color: #8c9da6;
+
+    font-size: 12px;
+}
+
+.credit-stat strong {
+    color: #218c78;
+}
+
+.debit-stat strong {
+    color: #c96159;
+}
+
+@media (max-width: 850px) {
+    .transaction-stats {
+        grid-template-columns: 1fr;
+    }
+}

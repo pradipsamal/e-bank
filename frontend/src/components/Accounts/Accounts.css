@@ -1,0 +1,22 @@
+/* ==========================================
+   ACCOUNTS PAGE
+========================================== */
+
+.accounts-page {
+  min-height: calc(100vh - 80px);
+
+  padding: 36px 4% 60px;
+
+  background: #f6f9fb;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .accounts-page {
+    padding: 25px 15px 45px;
+  }
+}

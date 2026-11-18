@@ -1,0 +1,154 @@
+/* ==========================================
+   ACCOUNT LIST
+========================================== */
+
+.account-list {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   LIST HEADER
+========================================== */
+
+.account-list-header {
+  margin-bottom: 14px;
+  padding: 0 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.account-list-header h2 {
+  margin: 0;
+
+  color: #31566e;
+
+  font-size: 18px;
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+
+.account-list-header p {
+  margin: 5px 0 0;
+
+  color: #8c9da6;
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+
+.account-list-count {
+  padding: 7px 11px;
+
+  border: 1px solid #dcebe8;
+  border-radius: 6px;
+
+  background: #f0f8f6;
+
+  color: #278a79;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* ==========================================
+   LIST CONTENT
+========================================== */
+
+.account-list-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.account-empty {
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  border: 1px solid #e1e9ed;
+  border-radius: 13px;
+
+  background: #ffffff;
+}
+
+
+.empty-account-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef4f7;
+
+  color: #728a99;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+.account-empty h3 {
+  margin: 0;
+
+  color: #4d697b;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.account-empty p {
+  margin: 6px 0 0;
+
+  color: #8f9ea6;
+
+  font-size: 12px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+  .account-list-header h2 {
+    font-size: 16px;
+  }
+
+
+  .account-list-header p {
+    font-size: 11px;
+  }
+
+
+  .account-list-count {
+    font-size: 9px;
+  }
+
+}

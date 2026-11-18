@@ -1,0 +1,776 @@
+/* =========================================
+   DELETE ACCOUNT PAGE
+========================================= */
+
+.delete-account-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    background: #f5f8fa;
+}
+
+
+/* =========================================
+   BACK TO HOME
+========================================= */
+
+.back-home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    padding: 9px 14px;
+
+    border: 1px solid #dce5e9;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #496b7d;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.back-home-button:hover {
+    border-color: #b9ccd5;
+    background: #f7fafb;
+    color: #244e6b;
+    transform: translateX(-2px);
+}
+
+.back-home-arrow {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: transform 0.2s ease;
+}
+
+.back-home-button:hover .back-home-arrow {
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   DELETE ACCOUNT HEADER
+========================================= */
+
+.delete-account-header {
+    width: 100%;
+    min-height: 115px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #e1e9ed;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow:
+        0 4px 18px rgba(28, 61, 80, 0.035);
+}
+
+
+/* Delete Icon */
+
+.delete-account-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #fff1f0;
+    color: #c95e57;
+
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
+/* Header Label */
+
+.delete-account-header span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #91a0a8;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* Header Title */
+
+.delete-account-header h1 {
+    margin: 0;
+
+    color: #244e6b;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+/* Header Description */
+
+.delete-account-header p {
+    margin: 6px 0 0;
+
+    color: #7d8d96;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   DELETE ACCOUNT CARD
+========================================= */
+
+.delete-account-card {
+    width: 100%;
+
+    margin-top: 22px;
+    padding: 28px;
+
+    border: 1px solid #e1e9ed;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 18px rgba(28, 61, 80, 0.035);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.delete-account-card-header {
+    padding-bottom: 22px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #edf1f3;
+}
+
+
+/* Card Heading */
+
+.delete-account-card-header h2 {
+    margin: 0;
+
+    color: #294f67;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* Card Description */
+
+.delete-account-card-header p {
+    margin: 6px 0 0;
+
+    color: #87969e;
+
+    font-size: 12px;
+}
+
+
+/* Delete Badge */
+
+.danger-badge {
+    padding: 7px 11px;
+
+    border: 1px solid #f3d4d1;
+    border-radius: 6px;
+
+    background: #fff4f3;
+    color: #c45e56;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.delete-form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px 24px;
+
+    padding: 26px 0;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.delete-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Labels */
+
+.delete-form-group label {
+    margin-bottom: 8px;
+
+    color: #6e818c;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* Inputs */
+
+.delete-form-group input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d9e3e8;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #fbfcfd;
+    color: #31556c;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Placeholder */
+
+.delete-form-group input::placeholder {
+    color: #a7b2b8;
+
+    font-weight: 400;
+}
+
+
+/* Input Focus */
+
+.delete-form-group input:focus {
+    border-color: #7fa9a2;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(81, 137, 128, 0.08);
+}
+
+
+/* Input Description */
+
+.delete-form-group small {
+    margin-top: 7px;
+
+    color: #9aa8af;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   WARNING BOX
+========================================= */
+
+.delete-warning {
+    padding: 16px 18px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    border: 1px solid #f1d8d5;
+    border-radius: 9px;
+
+    background: #fff8f7;
+}
+
+
+/* Warning Icon */
+
+.warning-icon {
+    width: 26px;
+    height: 26px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f4d5d2;
+    color: #bd5b54;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* Warning Heading */
+
+.delete-warning strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #a9524c;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* Warning Text */
+
+.delete-warning p {
+    margin: 0;
+
+    color: #9a7774;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.delete-form-actions {
+    margin-top: 24px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+
+/* Common Button */
+
+.delete-cancel-button,
+.delete-submit-button {
+    height: 43px;
+
+    padding: 0 20px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Clear Button */
+
+.delete-cancel-button {
+    border: 1px solid #dbe4e8;
+
+    background: #ffffff;
+
+    color: #617985;
+}
+
+.delete-cancel-button:hover {
+    background: #f6f9fa;
+
+    border-color: #cbd8de;
+}
+
+
+/* Delete Button */
+
+.delete-submit-button {
+    border: 1px solid #c95f58;
+
+    background: #c95f58;
+
+    color: #ffffff;
+}
+
+.delete-submit-button:hover {
+    background: #b9524c;
+
+    border-color: #b9524c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   CONFIRMATION OVERLAY
+========================================= */
+
+.delete-confirm-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(26, 45, 57, 0.42);
+}
+
+
+/* =========================================
+   CONFIRMATION MODAL
+========================================= */
+
+.delete-confirm-modal {
+    width: 100%;
+
+    max-width: 430px;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 60px rgba(23, 48, 62, 0.2);
+
+    text-align: center;
+}
+
+
+/* Modal Danger Icon */
+
+.modal-danger-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0ef;
+
+    color: #c45d56;
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+/* Modal Heading */
+
+.delete-confirm-modal h2 {
+    margin: 0;
+
+    color: #294f67;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* Modal Description */
+
+.delete-confirm-modal>p {
+    margin: 10px 0 18px;
+
+    color: #7d8c94;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.delete-confirm-modal>p strong {
+    color: #31566c;
+}
+
+
+/* =========================================
+   MODAL ACCOUNT INFO
+========================================= */
+
+.modal-account-info {
+    padding: 13px;
+
+    margin-bottom: 22px;
+
+    border-radius: 8px;
+
+    background: #f7f9fa;
+}
+
+
+/* Account Label */
+
+.modal-account-info span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #97a5ac;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* Account Holder */
+
+.modal-account-info strong {
+    color: #31566c;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MODAL ACTIONS
+========================================= */
+
+.modal-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+/* Modal Buttons */
+
+.modal-cancel-button,
+.modal-delete-button {
+    height: 42px;
+
+    padding: 0 17px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Modal Cancel */
+
+.modal-cancel-button {
+    border: 1px solid #dbe4e8;
+
+    background: #ffffff;
+
+    color: #617985;
+}
+
+.modal-cancel-button:hover {
+    background: #f6f9fa;
+
+    border-color: #cbd8de;
+}
+
+
+/* Modal Delete */
+
+.modal-delete-button {
+    border: 1px solid #c95f58;
+
+    background: #c95f58;
+
+    color: #ffffff;
+}
+
+.modal-delete-button:hover {
+    background: #b9524c;
+
+    border-color: #b9524c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 800px) {
+    .delete-account-page {
+        padding: 20px;
+    }
+
+    .delete-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .delete-confirm-group {
+        grid-column: auto;
+
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+    .delete-account-page {
+        padding: 15px;
+    }
+
+
+    /* Header */
+
+    .delete-account-header {
+        padding: 20px;
+
+        align-items: flex-start;
+    }
+
+    .delete-account-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 23px;
+    }
+
+    .delete-account-header h1 {
+        font-size: 23px;
+    }
+
+    .delete-account-header p {
+        font-size: 12px;
+    }
+
+
+    /* Card */
+
+    .delete-account-card {
+        padding: 20px;
+    }
+
+
+    /* Card Header */
+
+    .delete-account-card-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    /* Form */
+
+    .delete-form-grid {
+        padding: 22px 0;
+    }
+
+
+    /* Actions */
+
+    .delete-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .delete-cancel-button,
+    .delete-submit-button {
+        width: 100%;
+    }
+
+
+    /* Modal */
+
+    .delete-confirm-modal {
+        padding: 24px 20px;
+    }
+
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-cancel-button,
+    .modal-delete-button {
+        width: 100%;
+    }
+}
